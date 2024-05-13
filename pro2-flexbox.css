@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+/* I want to adjust the image */
+img{
+    width: 60px;
+    border-radius: 50%;
+}
+.one{
+    flex: 2 48%;
+    background: #8a2be2;
+    color:#fff;
+    height: 340px;
+}
+.two{
+    flex: 1 23%;
+    background: #010a31;
+    color:#fff;
+    height: 340px;
+}
+.three{
+    flex: 1 23%;
+    background: #fff;
+    color:#000;
+}
+.four{
+    flex: 0 25%;
+    background: #fff;
+    color:#000;
+    margin-top: -19%;
+}
+.five{
+    flex: 0 48%;
+    background: #050514;
+    color:#fff;
+    margin-top: -19%;
+}
+.box{
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0px 0px 3px 0 #262f58;
+}
+h4{
+    font-size: 12px;
+    position: absolute;
+    top: 35px;
+    left: 95px;
+}
+span{
+    font-weight: 700;
+    color: #c9b8b8;
+}
+.box h3{
+    margin: 15px 0 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+}
+.three h3, .four h3{
+    color:#010a31; 
+}
+.three span, .four span{
+    color:#867e7e;
+    
+}
+.one p{
+    color: #c9b8b8;
+}
+
+/* responsive design */
+/* Mobile */
+@media screen and (max-width: 480px) {
+    .container{
+        display: block;
+        width: auto;
+        min-width: 200px;
+    }
+    .box{
+        margin-bottom: 25px;
+        min-height: 450px;
+    }
+    .two{
+        height: 140px;
+    }
+    .four, .five{
+        margin-top: 0;
+    }
+}
